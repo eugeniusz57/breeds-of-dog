@@ -1,9 +1,9 @@
-// import React from 'react'
+import React from 'react'
 
-// type Props = {}
+type Props = {}
 
-// const SearchBreed = (props: Props) => {
-//   return (
-//     <div>SearchBreed</div>
-//   )
-// }
+const SearchBreed = (props: Props) => {
+  return (
+    <div>Search</div>
+  )
+}
