@@ -1,11 +1,16 @@
 import Link from "next/link"
+import NavHeder from "./NavHeder"
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Search Breed', href:'/search'},
+]
 
 
 const TheHeader = () => {
   return (
     <header>
-      <Link href={'/'}>Home</Link>
-      <Link href={'/search'}>Search Breeds</Link>
+      <NavHeder navLinks={navItems}/>
     </header>
   )
 }
