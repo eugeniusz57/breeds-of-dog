@@ -3,6 +3,8 @@ import styles from './page.module.css'
 import Link from 'next/link';
 const   getBreeds = async () => {
   const res = await fetch('https://dog.ceo/api/breeds/list/all');
+
+  if (!res.ok) {  throw new Error('Unable to fetch') }
   return res.json();
 }
 
@@ -11,7 +13,6 @@ const   getBreeds = async () => {
 export default async function Home() {
   const breeds = await getBreeds();
   const breedsArr = Object.keys(breeds.message)
-  console.log("breedsArr", breedsArr);
   
   return (
   <>
