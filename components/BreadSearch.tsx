@@ -1,6 +1,7 @@
 "use client"
 
-import { getBreedsByBreed } from "@/app/[id]/page"
+
+import { getBreedsByBreed } from "@/serverAPI"
 import { FormEventHandler, useState } from "react"
 
 type Props = {
